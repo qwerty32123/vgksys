@@ -1,0 +1,15 @@
+[package]
+name = "vgksys"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+rtshark = "4.1.0"
+clap = { version = "4.4", features = ["derive"] }
+ctrlc = "3.4"
+rand = "0.8"
+
+
+[target.'cfg(windows)'.dependencies]
+named_pipe = "0.4" # Handles Windows named pipe server creation
