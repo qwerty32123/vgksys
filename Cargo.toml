@@ -9,6 +9,7 @@ rtshark = "4.1.0"
 clap = { version = "4.4", features = ["derive"] }
 ctrlc = "3.4"
 rand = "0.8"
+regex = "1.12.2"
 
 
 [target.'cfg(windows)'.dependencies]
